@@ -2,6 +2,7 @@ pragma solidity 0.8.7;
 
 contract faucet {
     address owner;
+    uint amount = 50000000000000000;
 
     constructor() {
         owner = msg.sender;
@@ -23,9 +24,9 @@ contract faucet {
 
     function sendEth(address target) external onlyOwner{
 
-        if(checkAddress(target) && address(this).balance > 50000000000000000){
+        if(checkAddress(target) && address(this).balance > amount){
 
-            payable(target).transfer(50000000000000000);
+            payable(target).transfer(amount);
 
 
         }else{
