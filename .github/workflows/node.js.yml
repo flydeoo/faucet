@@ -28,12 +28,15 @@ jobs:
 
 
     - name: Install Dependencies express
-    - run: npm install express
+      run: npm install express
 
     - name: Install Dependencies web3
-    - run: npm install web3
+      run: npm install web3
 
     - name: Install Dependencies vash
-    - run: npm install vash
+      run: npm install vash
+
+    - name: run app
+      run: node ./app.js
 
  
