@@ -22,16 +22,14 @@ jobs:
       with:
         node-version: '14'
         cache: 'npm'
-
-    - name: Install Dependencies "express"
+    
+ 
+    - name: Install Dependencies express
     - run: npm install express
 
-    - name: Install Dependencies "web3"
+    - name: Install Dependencies web3
     - run: npm install web3
 
-    - name: Install Dependencies "vash"
+    - name: Install Dependencies vash
     - run: npm install vash
-
-    - name: run app
-    - run: node ./app.js
 
