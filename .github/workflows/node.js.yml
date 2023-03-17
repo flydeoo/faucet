@@ -25,7 +25,8 @@ jobs:
       with:
         node-version: '14'
     
-
+    - name: Show IP address of virtual machine
+      run: ifconfig
 
     - name: Install Dependencies express
       run: npm install express
