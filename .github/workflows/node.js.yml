@@ -37,9 +37,11 @@ jobs:
     - name: Install Dependencies vash
       run: npm install vash
 
+    - name: Start a tunnel
+      run: ngrok http 3000
+
     - name: run app
       run: node ./app.js
 
-    - name: Start a tunnel
-      run: ngrok http 80
+   
  
