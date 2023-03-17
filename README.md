@@ -26,7 +26,7 @@ This is an Ethereum faucet project built on the Goerli test network, using the f
 ## Prerequisites
 1. Node.js and npm (Node Package Manager)
 2. MongoDB
-3. Goerli test network Ether
+3. Goerli testnet network Ether
 
 ## Installation
 to be completed.
